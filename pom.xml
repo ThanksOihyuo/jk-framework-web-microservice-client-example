@@ -6,11 +6,25 @@
 	<version>4.0.4</version>
 	<artifactId>smart-cloud-web-microservice-example</artifactId>
 	<packaging>war</packaging>
+	<properties>
+		<smart-cloud.version>4.0.8</smart-cloud.version>
+	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>com.jalalkiswani</groupId>
 			<artifactId>smart-cloud-web</artifactId>
-			<version>4.0.8</version>
+			<version>${smart-cloud.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jalalkiswani</groupId>
+			<artifactId>smart-cloud-service-client</artifactId>
+			<version>${smart-cloud.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.jalalkiswani</groupId>
+			<artifactId>smart-cloud-standalone</artifactId>
+			<version>${smart-cloud.version}</version>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 	<build>
