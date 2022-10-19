@@ -1,7 +1,7 @@
 package com.app.person;
 
-import com.jk.util.config.JKConfig;
-import com.jk.web.services.client.JKServiceClient;
+import com.jk.core.config.JKConfig;
+import com.jk.services.client.JKServiceClient;
 
 public class ServiceClient extends JKServiceClient<Person> {
 	@Override
