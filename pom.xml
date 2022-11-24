@@ -3,11 +3,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.jalalkiswani</groupId>
-	<version>6.0.0</version>
+	<version>7.0.0</version>
 	<artifactId>jk-framework-web-microservice-example</artifactId>
 	<packaging>war</packaging>
 	<properties>
-		<jk-framework.version>6.0.0</jk-framework.version>
+		<jk-framework.version>7.0.0-SNAPSHOT</jk-framework.version>
 	</properties>
 	<dependencies>
 		<dependency>
