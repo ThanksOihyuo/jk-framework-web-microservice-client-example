@@ -2,50 +2,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.jalalkiswani</groupId>
-	<version>6.0.0</version>
+	<parent>
+		<groupId>com.jalalkiswani</groupId>
+		<artifactId>jk-webapp</artifactId>
+		<version>7.0.0-M1</version>
+	</parent>
 	<artifactId>jk-framework-web-microservice-example</artifactId>
 	<packaging>war</packaging>
-	<properties>
-		<jk-framework.version>6.0.0</jk-framework.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>com.jalalkiswani</groupId>
-			<artifactId>jk-framework-web</artifactId>
-			<version>${jk-framework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.jalalkiswani</groupId>
-			<artifactId>jk-framework-service-client</artifactId>
-			<version>${jk-framework.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.jalalkiswani</groupId>
-			<artifactId>jk-framework-standalone</artifactId>
-			<version>${jk-framework.version}</version>
-			<scope>provided</scope>
-		</dependency>
-	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
-				<version>3.2.3</version>
-				<configuration>
-					<failOnMissingWebXml>false</failOnMissingWebXml>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
 </project>

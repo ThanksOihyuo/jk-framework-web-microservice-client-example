@@ -1,11 +1,13 @@
 package com.app.person;
 
-import javax.faces.bean.ManagedBean;
+import com.jk.web.faces.mb.JKWebController;
 
-import com.jk.web.faces.mb.JKManagedBean;
+import jakarta.faces.view.ViewScoped;
+import jakarta.inject.Named;
 
-@ManagedBean(name = "controller")
-public class Controller extends JKManagedBean {
+@Named("controller")
+@ViewScoped
+public class Controller extends JKWebController{
 	private ServiceClient client = new ServiceClient();
 	private Person model;
 
@@ -20,14 +22,12 @@ public class Controller extends JKManagedBean {
 		success(msg);
 		return null;
 	}
-
 	
 	public String sayHelloWithObject() {
 		String msg=client.callSayHelloWithObject(getModel());
 		success(msg);
 		return null;
 	}
-
 	
 	public Person getModel() {
 		if (model == null) {
@@ -39,6 +39,5 @@ public class Controller extends JKManagedBean {
 	public void setModel(Person model) {
 		this.model = model;
 	}
-
 
 }
