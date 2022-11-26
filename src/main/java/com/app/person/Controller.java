@@ -1,4 +1,4 @@
-package com.app.person;
+	package com.app.person;
 
 import com.jk.web.faces.mb.JKWebController;
 
